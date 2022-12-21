@@ -3,11 +3,9 @@ import { render } from '@testing-library/react'
 
 import Header from '.'
 
-const useRouter = jest.spyOn(require('next/router'), 'useRouter')
+jest.mock('next/router', () => require('next-router-mock'))
 
 it('<Header /> tests', () => {
-  useRouter.mockImplementation()
-
   const {
     container
   } = render(<Header />)

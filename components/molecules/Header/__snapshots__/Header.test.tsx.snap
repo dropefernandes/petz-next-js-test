@@ -37,7 +37,7 @@ exports[`<Header /> tests 1`] = `
       >
         <a
           class="link"
-          href="/about"
+          href="/quem-somos"
         >
           Quem Somos
         </a>

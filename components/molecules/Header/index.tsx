@@ -9,10 +9,6 @@ import styles from './Header.module.css'
 export default function Header() {
   const router = useRouter()
 
-  function nextStep () {
-    router.push('/schedule')
-  }
-
   return (
     <header className={styles.header}>
 
@@ -22,10 +18,10 @@ export default function Header() {
 
       <ul className={styles.nav}>
         <li className={styles.item}>
-          <Link className={styles.link} href='/about'>Quem Somos</Link>
+          <Link className={styles.link} href='/quem-somos'>Quem Somos</Link>
         </li>
         <li className={styles.item}>
-          <Button textLabel='Agendar Consulta' onClickEvent={nextStep} />
+          <Button textLabel='Agendar Consulta' onClickEvent={() => router.push('/agendar-consulta')} />
         </li>
       </ul>
     </header>
