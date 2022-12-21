@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { Inter } from '@next/font/google'
 
-import Button from '../components/atoms/Button'
+import MenuPokeBall from '@/components/atoms/MenuPokeBall'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -21,7 +21,7 @@ export default function Home() {
       </Head>
 
       <main className={inter.className}>
-        <Button textLabel="Concluir Agendamento" onClickEvent={nextStep} />
+        <MenuPokeBall />
       </main>
     </>
   )
