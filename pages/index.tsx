@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { Inter } from '@next/font/google'
 
-import MenuPokeBall from '@/components/atoms/MenuPokeBall'
+import Header from '@/components/molecules/Header'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -21,7 +21,7 @@ export default function Home() {
       </Head>
 
       <main className={inter.className}>
-        <MenuPokeBall />
+        <Header />
       </main>
     </>
   )
