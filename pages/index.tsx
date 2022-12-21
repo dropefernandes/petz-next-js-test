@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import { Inter } from '@next/font/google'
 
-import Header from '@/components/molecules/Header'
+import Footer from '@/components/molecules/Footer'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -21,7 +21,7 @@ export default function Home() {
       </Head>
 
       <main className={inter.className}>
-        <Header />
+        <Footer />
       </main>
     </>
   )
