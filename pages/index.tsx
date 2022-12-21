@@ -1,15 +1,11 @@
 import Head from 'next/head'
 import { Inter } from '@next/font/google'
 
-import Footer from '@/components/molecules/Footer'
+import Step from '@/components/molecules/Step'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
-
-  function nextStep () {
-    console.log('event click button')
-  }
 
   return (
     <>
@@ -21,7 +17,7 @@ export default function Home() {
       </Head>
 
       <main className={inter.className}>
-        <Footer />
+        <Step actualStepName='Quem Somos' title='Quem Somos' slogan='A maior rede de tratamento pokémon.' router='about' />
       </main>
     </>
   )
