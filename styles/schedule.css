@@ -132,6 +132,39 @@
   width: 100%;
 }
 
+@media screen and (max-width: 768px) {
+  .field-group,
+  .resume {
+    flex-wrap: wrap;
+    padding: 16px;
+    margin: initial
+  }
+
+  .field-group > fieldset {
+    max-width: 100%;
+  }
+
+  .pokemons,
+  .details-schedule {
+    padding: 16px;
+  }
+
+  .pokemons > .list > .item {
+    flex-wrap: wrap;
+  }
+
+  .pokemons > .list > .item > fieldset,
+  .resume > button {
+    max-width: 100% !important;
+  }
+
+  .resume {
+    margin-top: 0 !important;
+    gap: 20px;
+  }
+}
+
+
 .field-group > fieldset {
   max-width: 265px;
   width: 100%;
