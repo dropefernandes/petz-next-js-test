@@ -1,4 +1,5 @@
 export default interface IButton {
-  textLabel: String,
-  onClickEvent: Function
+  textLabel: string,
+  onClickEvent: Function,
+  disabled?: boolean | undefined
 }
